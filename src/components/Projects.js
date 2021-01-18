@@ -1,22 +1,94 @@
-import React from 'react'
+import React from "react";
+import {
+  FaGithub,
+  FaCamera,
+  FaCircleNotch,
+  FaApple,
+  FaFileVideo,
+  FaSearchDollar,
+} from "react-icons/fa";
+const Projects = () => {
+  const [header] = React.useState({
+    mainHeader: "Projects",
+    subHeading: "My Projects",
+    text:
+      "",
+  });
+  const [state] = React.useState([
+    {
+      id: 1,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "PTPG",
+      text:
+        "A website which enables user to apply Part-Time PG  in OU.Admin can view the applications",
+    },
+    {
+      id: 2,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "Infinity",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 3,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "Outplacement Heros",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 4,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "Jaljeevika",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 5,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "AGV28-Chatapp",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 6,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "AlUmni web",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+  ]);
+  return (
+    <div className="services" id="Projects">
+      <div className="container">
+        <div className="services__header">
+          <div className="common">
+            <h3 className="heading">{header.mainHeader}</h3>
+            <h1 className="mainHeader">{header.subHeading}</h1>
+                     <div className="commonBorder"></div>
+          </div>
+          
 
-const Services = () => {
-    return (
-        <div className="services">
-            <div className="container">
-                <div className="services__header">
-                    <h3 className="heading">Projects</h3>
-                    <h1 className="mainHeader">
-                        Projects
-                    </h1>
-                    <p className="mainContent">
-                        
-                    </p>
+          <div className="row bgMain">
+            {state.map((info) => (
+              <div className="col-4 bgMain">
+                <div className="services__box">
+                  {info.icon}
+                  <div className="services__box-header">{info.heading}</div>
+                  <div className="services__box-p">{info.text}</div>
                 </div>
-            </div>
-            
+              </div>
+            ))}
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Services
+export default Projects;

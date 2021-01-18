@@ -49,7 +49,7 @@ const [info]=React.useState([
 
             
         </div>*/
-        <div className="about">
+        <div className="about" id="About">
       <div className="container">
         <div className="common">
           <h1 className="mainHeader">{state.mainHeading}</h1>

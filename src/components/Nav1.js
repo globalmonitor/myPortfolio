@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Nav() {
+function Nav1() {
   const [clicked, setclicked] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -35,7 +35,7 @@ function Nav() {
           <li className="nav-links">
             <Link
               activeClass="active"
-              to="banner"
+              to="Banner"
               spy={true}
               smooth={true}
               offset={-70}
@@ -86,4 +86,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Nav1;
