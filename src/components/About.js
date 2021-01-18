@@ -1,5 +1,5 @@
 import React from 'react'
-
+import App from '../App';
 const About = () => {
     const [state]=React.useState({mainHeading:"About Me"
 });
@@ -11,6 +11,7 @@ const [info]=React.useState([
 
 ]);
     return (
+      
        /* <div className="about">
             <div className="container">
             <div className="common">

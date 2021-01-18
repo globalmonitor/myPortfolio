@@ -5,9 +5,9 @@ const Services = () => {
         <div className="services">
             <div className="container">
                 <div className="services__header">
-                    <h3 className="heading">SERVICES</h3>
+                    <h3 className="heading">Projects</h3>
                     <h1 className="mainHeader">
-                        My Services
+                        Projects
                     </h1>
                     <p className="mainContent">
                         
