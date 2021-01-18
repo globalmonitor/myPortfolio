@@ -1,6 +1,8 @@
 import React from 'react'
+import { FaAlignJustify } from "react-icons/fa";
 
 const Nav = () => {
+    const [state, setState] = React.useState(true);
     return (
         <nav>
             <div className='navbar'> 
@@ -11,6 +13,7 @@ const Nav = () => {
                          <img src="/images/logo3.jpg" alt="logo123"/>
                      </div>
                 </ul>
+                {state ? (
                 <ul className="navbar__right">
                     <li><a href="">Home</a></li>
                     
@@ -19,11 +22,17 @@ const Nav = () => {
                     <li><a href="">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
+                 ) : (
+                    ""
+                  )}
                  </div>
                  
              </div>
 
             </div>
+            <div className="toggle" onClick={() => setState(!state)}>
+        <FaAlignJustify />
+      </div>
         </nav>
     )
 }
