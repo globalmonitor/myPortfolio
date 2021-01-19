@@ -21,7 +21,8 @@ const Projects = () => {
       heading: "PTPG",
       text:
         "A website which enables user to apply Part-Time PG  in OU.Admin can view the applications",
-    },
+      url:"https://github.com/pavangv28/PTPG"
+      },
     {
       id: 2,
       icon: <FaGithub className="commonIcons" />,
@@ -29,6 +30,7 @@ const Projects = () => {
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
+        url:"https://github.com/pavangv28/infinity"
     },
     {
       id: 3,
@@ -37,6 +39,7 @@ const Projects = () => {
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
+        url:"https://github.com/pavangv28/OutplacementHeros"
     },
     {
       id: 4,
@@ -45,6 +48,7 @@ const Projects = () => {
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
+        url:"https://github.com/pavangv28"
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ const Projects = () => {
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
+        url:"https://github.com/pavangv28/AGV28-chatapp"
     },
     {
       id: 6,
@@ -61,6 +66,7 @@ const Projects = () => {
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
+        url:"https://github.com/pavangv28/AlumniCSE"
     },
   ]);
   return (
@@ -76,12 +82,12 @@ const Projects = () => {
 
           <div className="row bgMain">
             {state.map((info) => (
-              <div className="col-4 bgMain">
-                <div className="services__box">
+             <div className="col-4 bgMain">
+              <a href={info.url} target="_blank"> <div className="services__box">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>
-                </div>
+                </div></a>
               </div>
             ))}
           </div>
