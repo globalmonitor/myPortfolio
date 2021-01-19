@@ -56,6 +56,19 @@ function Nav1() {
               About
             </Link>
           </li>
+          
+          <li className="nav-links">
+            <Link
+              activeClass="active"
+              to="Skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              Skills
+            </Link>
+          </li>
           <li className="nav-links">
             <Link
               activeClass="active"
